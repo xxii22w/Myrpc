@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/cgh/CodeFolder/MyRpc/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/cgh/CodeFolder/MyRpc/src -I/home/cgh/CodeFolder/MyRpc/example -g -o CMakeFiles/provider.dir/userservice.cc.o -c /home/cgh/CodeFolder/MyRpc/example/callee/userservice.cc",
+  "file": "/home/cgh/CodeFolder/MyRpc/example/callee/userservice.cc"
+},
+{
+  "directory": "/home/cgh/CodeFolder/MyRpc/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/cgh/CodeFolder/MyRpc/src -I/home/cgh/CodeFolder/MyRpc/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/cgh/CodeFolder/MyRpc/example/user.pb.cc",
+  "file": "/home/cgh/CodeFolder/MyRpc/example/user.pb.cc"
+}
+]
