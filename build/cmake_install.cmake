@@ -1,4 +1,4 @@
-# Install script for directory: /home/cgh/CodeFolder/MyRpc
+# Install script for directory: /home/cgh/CodeFolder/Myrpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cgh/CodeFolder/MyRpc/build/example/cmake_install.cmake")
+  include("/home/cgh/CodeFolder/Myrpc/build/src/cmake_install.cmake")
+  include("/home/cgh/CodeFolder/Myrpc/build/example/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cgh/CodeFolder/MyRpc/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cgh/CodeFolder/Myrpc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

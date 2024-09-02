@@ -1,4 +1,4 @@
-# Install script for directory: /home/cgh/CodeFolder/MyRpc/example/callee
+# Install script for directory: /home/cgh/CodeFolder/Myrpc/example/callee
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

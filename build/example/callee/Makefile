@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cgh/CodeFolder/MyRpc
+CMAKE_SOURCE_DIR = /home/cgh/CodeFolder/Myrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cgh/CodeFolder/MyRpc/build
+CMAKE_BINARY_DIR = /home/cgh/CodeFolder/Myrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cgh/CodeFolder/MyRpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cgh/CodeFolder/MyRpc/build/CMakeFiles /home/cgh/CodeFolder/MyRpc/build/example/callee//CMakeFiles/progress.marks
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cgh/CodeFolder/MyRpc/build/CMakeFiles 0
+	cd /home/cgh/CodeFolder/Myrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cgh/CodeFolder/Myrpc/build/CMakeFiles /home/cgh/CodeFolder/Myrpc/build/example/callee//CMakeFiles/progress.marks
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cgh/CodeFolder/Myrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/clean
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cgh/CodeFolder/Myrpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 example/callee/CMakeFiles/provider.dir/rule:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/rule
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/provider.dir/rule
 .PHONY : example/callee/CMakeFiles/provider.dir/rule
 
 # Convenience name for target.
@@ -127,56 +127,56 @@ provider: example/callee/CMakeFiles/provider.dir/rule
 
 # fast build rule for target.
 provider/fast:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
 .PHONY : provider/fast
 
-__/user.pb.o: __/user.pb.cc.o
-.PHONY : __/user.pb.o
+__/friend.pb.o: __/friend.pb.cc.o
+.PHONY : __/friend.pb.o
 
 # target to build an object file
-__/user.pb.cc.o:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
-.PHONY : __/user.pb.cc.o
+__/friend.pb.cc.o:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o
+.PHONY : __/friend.pb.cc.o
 
-__/user.pb.i: __/user.pb.cc.i
-.PHONY : __/user.pb.i
+__/friend.pb.i: __/friend.pb.cc.i
+.PHONY : __/friend.pb.i
 
 # target to preprocess a source file
-__/user.pb.cc.i:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i
-.PHONY : __/user.pb.cc.i
+__/friend.pb.cc.i:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.i
+.PHONY : __/friend.pb.cc.i
 
-__/user.pb.s: __/user.pb.cc.s
-.PHONY : __/user.pb.s
+__/friend.pb.s: __/friend.pb.cc.s
+.PHONY : __/friend.pb.s
 
 # target to generate assembly for a file
-__/user.pb.cc.s:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s
-.PHONY : __/user.pb.cc.s
+__/friend.pb.cc.s:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.s
+.PHONY : __/friend.pb.cc.s
 
-userservice.o: userservice.cc.o
-.PHONY : userservice.o
+friendservice.o: friendservice.cc.o
+.PHONY : friendservice.o
 
 # target to build an object file
-userservice.cc.o:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cc.o
-.PHONY : userservice.cc.o
+friendservice.cc.o:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/friendservice.cc.o
+.PHONY : friendservice.cc.o
 
-userservice.i: userservice.cc.i
-.PHONY : userservice.i
+friendservice.i: friendservice.cc.i
+.PHONY : friendservice.i
 
 # target to preprocess a source file
-userservice.cc.i:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cc.i
-.PHONY : userservice.cc.i
+friendservice.cc.i:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/friendservice.cc.i
+.PHONY : friendservice.cc.i
 
-userservice.s: userservice.cc.s
-.PHONY : userservice.s
+friendservice.s: friendservice.cc.s
+.PHONY : friendservice.s
 
 # target to generate assembly for a file
-userservice.cc.s:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/userservice.cc.s
-.PHONY : userservice.cc.s
+friendservice.cc.s:
+	cd /home/cgh/CodeFolder/Myrpc/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/friendservice.cc.s
+.PHONY : friendservice.cc.s
 
 # Help Target
 help:
@@ -187,12 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... provider"
-	@echo "... __/user.pb.o"
-	@echo "... __/user.pb.i"
-	@echo "... __/user.pb.s"
-	@echo "... userservice.o"
-	@echo "... userservice.i"
-	@echo "... userservice.s"
+	@echo "... __/friend.pb.o"
+	@echo "... __/friend.pb.i"
+	@echo "... __/friend.pb.s"
+	@echo "... friendservice.o"
+	@echo "... friendservice.i"
+	@echo "... friendservice.s"
 .PHONY : help
 
 
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cgh/CodeFolder/MyRpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cgh/CodeFolder/Myrpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
